@@ -1,5 +1,7 @@
 # Hang tight :call_me_hand:
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/535cfb69-fa53-4c35-819b-171a187da476/deploy-status)](https://app.netlify.com/sites/hang-tight/deploys)
+
 Pure CSS Loaders
 
 ```sh
