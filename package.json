@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Pure CSS loaders",
   "main": "index.css",
+  "styles": "index.css",
   "repository": "git@github.com:schne324/hang-tight.git",
   "author": "Harris Schneiderman <schne324@gmail.com>",
   "license": "MIT",
