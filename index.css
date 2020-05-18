@@ -4,7 +4,7 @@
  * DOTS
  */
 
-.dots > div {
+.hang-tight__dots > div {
   width: 24px;
   height: 24px;
   border-radius: 100%;
@@ -12,27 +12,27 @@
   animation: dots 1s infinite;
 }
 
-.dots > div:nth-child(1) {
+.hang-tight__dots > div:nth-child(1) {
   animation-delay: 0.1s;
   background: #000;
 }
 
-.dots > div:nth-child(2) {
+.hang-tight__dots > div:nth-child(2) {
   animation-delay: 0.2s;
   background: #222;
 }
 
-.dots > div:nth-child(3) {
+.hang-tight__dots > div:nth-child(3) {
   animation-delay: 0.3s;
   background: #444;
 }
 
-.dots > div:nth-child(4) {
+.hang-tight__dots > div:nth-child(4) {
   animation-delay: 0.4s;
   background: #666;
 }
 
-.dots > div:nth-child(5) {
+.hang-tight__dots > div:nth-child(5) {
   animation-delay: 0.5s;
   background: #999;
 }
@@ -56,7 +56,7 @@
  * SLIDING BARS
  */
 
-.sliding-bars {
+.hang-tight__sliding-bars {
   width: 250px;
   height: 50px;
   line-height: 50px;
@@ -64,7 +64,7 @@
   position: relative;
 }
 
- .sliding-bars::before, .sliding-bars::after {
+ .hang-tight__sliding-bars::before, .hang-tight__sliding-bars::after {
   content: "";
   display: block;
   width: 15px;
@@ -73,10 +73,10 @@
   position: absolute;
   animation: sliding-bars .7s infinite alternate ease-in-out;
 }
-.sliding-bars::before {
+.hang-tight__sliding-bars::before {
   top: 0;
 }
-.sliding-bars::after {
+.hang-tight__sliding-bars::after {
   bottom: 0;
 }
 
@@ -99,17 +99,17 @@
 
 
 /*
- * BALLS
+ * SPINNING CIRCLES
  */
 
-.balls  {
-  animation: balls 1s infinite;
+.hang-tight__spinning-circles {
+  animation: circles 1s infinite;
   height: 50px;
   width: 50px;
 }
 
-.balls:before,
-.balls:after {
+.hang-tight__spinning-circles:before,
+.hang-tight__spinning-circles:after {
   border-radius: 50%;
   content: '';
   display: block;
@@ -117,20 +117,20 @@
   width: 20px;
 }
 
-.balls:before {
-  animation: ball1 1s infinite;
+.hang-tight__spinning-circles:before {
+  animation: circle1 1s infinite;
   background-color: #000;
   box-shadow: 30px 0 0 #000;
   margin-bottom: 10px;
 }
 
-.balls:after {
-  animation: ball2 1s infinite;
+.hang-tight__spinning-circles:after {
+  animation: circle2 1s infinite;
   background-color: #222;
   box-shadow: 30px 0 0 #000;
 }
 
-@keyframes balls {
+@keyframes circles {
   0% {
     transform: rotate(0deg) scale(0.8);
   }
@@ -142,7 +142,7 @@
   }
 }
 
-@keyframes ball1 {
+@keyframes circle1 {
   0% {
     box-shadow: 30px 0 0 #444;
   }
@@ -159,7 +159,7 @@
   }
 }
 
-@keyframes ball2 {
+@keyframes circle2 {
   0% {
     box-shadow: 30px 0 0 #999;
   }
@@ -180,13 +180,13 @@
  * RIPPLE
  */
 
-.ripple {
+.hang-tight__ripple {
   width: 75px;
   height: 75px;
   position: relative;
 }
 
-.ripple > div {
+.hang-tight__ripple > div {
   position: absolute;
   border: 4px solid currentColor;
   opacity: 1;
@@ -194,7 +194,7 @@
   animation: ripple 1s cubic-bezier(0, 0.3, 0.8, 1) infinite;
 }
 
-.ripple > div:nth-child(2) {
+.hang-tight__ripple > div:nth-child(2) {
   animation-delay: -0.5s;
 }
 
