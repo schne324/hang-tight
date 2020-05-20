@@ -24,7 +24,7 @@ This package is purely CSS and nothing else. Simply add the desired class to a d
 
 ```html
 <div
-  class="dots"
+  class="hang-tight__dots"
   role="progressbar"
   aria-valuetext="Loading"
   aria-busy="true"
@@ -43,7 +43,7 @@ This package is purely CSS and nothing else. Simply add the desired class to a d
 
 ```html
 <div
-  class="sliding-bars"
+  class="hang-tight__sliding-bars"
   role="progressbar"
   aria-valuetext="Loading..."
   aria-busy="true"
@@ -55,11 +55,11 @@ This package is purely CSS and nothing else. Simply add the desired class to a d
 </div>
 ```
 
-### `balls`
+### `spinning-circles`
 
 ```html
 <div
-  class="balls"
+  class="hang-tight__spinning-circles"
   role="progressbar"
   aria-valuetext="Loading..."
   aria-busy="true"
@@ -73,7 +73,7 @@ This package is purely CSS and nothing else. Simply add the desired class to a d
 
 ```html
 <div
-  class="ripple"
+  class="hang-tight__ripple"
   role="progressbar"
   aria-valuetext="Loading..."
   aria-busy="true"
