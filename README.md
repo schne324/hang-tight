@@ -84,3 +84,27 @@ This package is purely CSS and nothing else. Simply add the desired class to a d
   <div></div>
 </div>
 ```
+
+### `waves`
+
+```html
+<div
+  class="hang-tight__wave"
+  role="progressbar"
+  aria-valuetext="Loading..."
+  aria-busy="true"
+  aria-valuemin="0"
+  aria-valuemax="100"
+>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+```
