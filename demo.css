@@ -1,0 +1,89 @@
+body {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  background: #F7F9F9;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 1.5em 0;
+}
+
+h1 span {
+  padding: .5em;
+  display: inline-block;
+}
+
+h1 span:nth-child(1) {
+  border-bottom: 5px solid #3185FC;
+}
+
+h1 span:nth-child(2) {
+  border-top: 5px solid #34E5FF;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0 0 1em 0;
+}
+
+code {
+  display: block;
+  padding: 1em;
+  background: #fff;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5em;
+}
+
+a, a:visited {
+  color: #26547c;
+  font-size: 1.4em;
+}
+
+button {
+  background: #000;
+  color: #F7F9F9;
+  padding: 1em;
+  display: block;
+  margin: 2em auto;
+  border: 3px solid #fff;
+  font-size: 1.1em;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #000;
+  transition: all 300ms;
+}
+
+button:focus,
+button:hover {
+  color: #000;
+  background: #F7F9F9;
+  border: 3px solid #000;
+  transition: all 300ms;
+}
+
+.hang-tight__sliding-bars {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+[role="progressbar"] {
+  margin: 0 auto;
+}
+
+section {
+  background: #fff;
+  padding: 2em;
+  margin: 3.5em auto;
+  border-radius: 5px;
+  max-width: 500px;
+  box-shadow: 0 0 1px #000;
+}

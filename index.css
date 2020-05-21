@@ -1,6 +1,17 @@
 /* TODO: variablize colors? */
 
 /*
+ * allow animations to be paused
+ */
+
+.hang-tight--paused [role="progressbar"],
+.hang-tight--paused [role="progressbar"] *,
+.hang-tight--paused [role="progressbar"]::before,
+.hang-tight--paused [role="progressbar"]::after {
+  animation-play-state: paused;
+}
+
+/*
  * DOTS
  */
 
