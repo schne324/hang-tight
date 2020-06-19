@@ -39,6 +39,29 @@ This package is purely CSS and nothing else. Simply add the desired class to a d
 </div>
 ```
 
+### `squares`
+
+```html
+<div
+  class="hang-tight__squares"
+  role="progressbar"
+  aria-valuetext="Loading..."
+  aria-busy="true"
+  aria-valuemin="0"
+  aria-valuemax="100"
+>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+```
+
 ### `sliding-bars`
 
 ```html
