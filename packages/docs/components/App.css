@@ -1,10 +1,15 @@
+@import 'hang-tight';
+
 body {
   font-family: 'Comfortaa', cursive;
   font-size: 16px;
-  background: #F7F9F9;
+  background: #f7f9f9;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -14,19 +19,19 @@ h1 {
 }
 
 h1 span {
-  padding: .5em;
+  padding: 0.5em;
   display: inline-block;
 }
 
 h1 span:nth-child(1) {
-  border-bottom: 5px solid #3185FC;
+  border-bottom: 5px solid #3185fc;
 }
 
 h1 span:nth-child(2) {
-  border-top: 5px solid #34E5FF;
+  border-top: 5px solid #34e5ff;
 }
 
-h2 {
+h3 {
   font-size: 2.5em;
   margin: 0 0 1em 0;
 }
@@ -39,14 +44,15 @@ code {
   font-size: 1.5em;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: #26547c;
   font-size: 1.4em;
 }
 
 button {
   background: #000;
-  color: #F7F9F9;
+  color: #f7f9f9;
   padding: 1em;
   display: block;
   margin: 2em auto;
@@ -60,7 +66,7 @@ button {
 button:focus,
 button:hover {
   color: #000;
-  background: #F7F9F9;
+  background: #f7f9f9;
   border: 3px solid #000;
   transition: all 300ms;
   box-shadow: 0;
@@ -76,8 +82,14 @@ main {
   text-align: center;
 }
 
-[role="progressbar"] {
+[role='progressbar'] {
   margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 section {
@@ -87,8 +99,23 @@ section {
   border-radius: 5px;
   max-width: 500px;
   box-shadow: 0 0 1px #000;
+  width: 25%;
 }
 
 section.min {
   min-height: 185px;
+}
+
+label {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+@media all and (max-width: 1033px) {
+  section {
+    width: 50%;
+  }
 }
