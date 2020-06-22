@@ -10,7 +10,7 @@ $ npm install --save hang-tight
 
 ## Usage
 
-This package is purely CSS and nothing else. Simply add the desired class to a div and hang-tight's css will do the rest.  Each loader should have the following attributes set:
+This package is purely CSS and nothing else. Simply add the desired class to a div and hang-tight's css will do the rest. Each loader should have the following attributes set:
 
 - `role="progressbar"`
 - `aria-valuetext` ("Loading" for example)
@@ -88,8 +88,7 @@ This package is purely CSS and nothing else. Simply add the desired class to a d
   aria-busy="true"
   aria-valuemin="0"
   aria-valuemax="100"
->
-</div>
+></div>
 ```
 
 ### `ripple`
