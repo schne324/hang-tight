@@ -43,6 +43,9 @@
     ]
   },
   "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "deploy": "yarn bootstrap && yarn build",
     "dev": "lerna run --parallel dev",
     "fmt": "prettier --write 'packages/docs/**/*.{css,js,tsx}' 'packages/styles/**/*.css' 'packages/react/**/*.{js,tsx}' *.{js,json,md}",
     "lint": "eslint ."
