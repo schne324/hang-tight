@@ -8,6 +8,7 @@ import {
   Squares,
   Waves,
 } from 'hang-tight-react';
+import Section from './Section';
 import './App.css';
 
 const App: React.ComponentType = () => {
@@ -27,34 +28,27 @@ const App: React.ComponentType = () => {
         <input checked={animationEnabled} type="checkbox" onChange={onChange} />
       </label>
       <div className="grid">
-        <section>
-          <h2>Dots</h2>
+        <Section name="Dots">
           <Dots paused={!animationEnabled} />
-        </section>
-        <section className="min">
-          <h2>Squares</h2>
+        </Section>
+        <Section name="Squares" className="min">
           <Squares paused={!animationEnabled} />
-        </section>
-        <section>
-          <h2>Spinning Circles</h2>
+        </Section>
+        <Section name="Spinning Circles">
           <SpinningCircles paused={!animationEnabled} />
-        </section>
-        <section>
-          <h2>Ripple</h2>
+        </Section>
+        <Section name="Ripple">
           <Ripple paused={!animationEnabled} />
-        </section>
-        <section className="min">
-          <h2>EQ</h2>
+        </Section>
+        <Section name="EQ" className="min">
           <EQ paused={!animationEnabled} />
-        </section>
-        <section>
-          <h2>SlidingBars</h2>
+        </Section>
+        <Section name="Sliding Bars">
           <SlidingBars paused={!animationEnabled} />
-        </section>
-        <section>
-          <h2>Waves</h2>
+        </Section>
+        <Section name="Waves">
           <Waves paused={!animationEnabled} />
-        </section>
+        </Section>
       </div>
     </main>
   );
