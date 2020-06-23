@@ -1,11 +1,47 @@
 {
-  "name": "hang-tight",
-  "version": "1.1.0",
+  "name": "hang-tight-parent-monorepo",
+  "version": "0.0.0",
   "description": "Pure CSS loaders",
   "main": "index.css",
   "styles": "index.css",
   "repository": "git@github.com:schne324/hang-tight.git",
   "author": "Harris Schneiderman <schne324@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@types/parcel-bundler": "^1.12.1",
+    "@types/react": "^16.9.38",
+    "eslint": "^7.3.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.0",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.2.11",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,css,md,ts,tsx}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "postinstall": "lerna bootstrap",
+    "dev": "lerna run --parallel dev",
+    "fmt": "prettier --write 'packages/docs/**/*.{css,js,tsx}' 'packages/styles/**/*.css' 'packages/react/**/*.{js,tsx}' *.{js,json,md}",
+    "lint": "eslint ."
+  }
 }

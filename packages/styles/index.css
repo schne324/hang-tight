@@ -5,18 +5,19 @@
  * allow animations to be paused
  */
 .hang-tight--paused,
-.hang-tight--paused [role="progressbar"],
-.hang-tight--paused [role="progressbar"] *,
-.hang-tight--paused [role="progressbar"]::before,
+.hang-tight--paused > div,
+.hang-tight--paused [role='progressbar'],
+.hang-tight--paused [role='progressbar'] *,
+.hang-tight--paused [role='progressbar']::before,
 .hang-tight--paused::before,
-.hang-tight--paused [role="progressbar"]::after,
+.hang-tight--paused [role='progressbar']::after,
 .hang-tight--paused::after {
-  animation-play-state: paused;
+  animation-play-state: paused !important;
 }
 
 /*
- * DOTS
- */
+  * DOTS
+  */
 
 .hang-tight__dots > div {
   width: 24px;
@@ -67,8 +68,8 @@
 }
 
 /*
- * SLIDING BARS
- */
+  * SLIDING BARS
+  */
 
 .hang-tight__sliding-bars {
   width: 250px;
@@ -78,14 +79,15 @@
   position: relative;
 }
 
- .hang-tight__sliding-bars::before, .hang-tight__sliding-bars::after {
-  content: "";
+.hang-tight__sliding-bars::before,
+.hang-tight__sliding-bars::after {
+  content: '';
   display: block;
   width: 15px;
   height: 15px;
   background: #000;
   position: absolute;
-  animation: hang-tight-sliding-bars .7s infinite alternate ease-in-out;
+  animation: hang-tight-sliding-bars 0.7s infinite alternate ease-in-out;
 }
 .hang-tight__sliding-bars::before {
   top: 0;
@@ -111,10 +113,9 @@
   }
 }
 
-
 /*
- * SPINNING CIRCLES
- */
+  * SPINNING CIRCLES
+  */
 
 .hang-tight__spinning-circles {
   animation: hang-tight-circles 1s infinite;
@@ -191,8 +192,8 @@
 }
 
 /*
- * RIPPLE
- */
+  * RIPPLE
+  */
 
 .hang-tight__ripple {
   width: 75px;
@@ -231,8 +232,8 @@
 }
 
 /*
- * WAVE
- */
+  * WAVE
+  */
 
 .hang-tight__wave {
   position: relative;
@@ -253,24 +254,24 @@
 }
 
 .hang-tight__wave > div:nth-child(1) {
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   bottom: 0;
   right: 0;
   animation-delay: 1.4s;
 }
 
 .hang-tight__wave > div:nth-child(2) {
-  top:10px;
-  left:10px;
+  top: 10px;
+  left: 10px;
   bottom: 10px;
-  right:10px;
+  right: 10px;
   animation-delay: 1.3s;
 }
 
 .hang-tight__wave > div:nth-child(3) {
-  top:20px;
-  left:20px;
+  top: 20px;
+  left: 20px;
   bottom: 20px;
   right: 20px;
   animation-delay: 1.2s;
@@ -347,11 +348,11 @@
 }
 
 /*
- * EQ
- */
+  * EQ
+  */
 
 body .hang-tight__eq {
-  animation-delay: -.15s;
+  animation-delay: -0.15s;
   position: relative;
 }
 
@@ -367,7 +368,7 @@ body .hang-tight__eq {
 .hang-tight__eq:before {
   position: absolute;
   content: '';
-  animation-delay: -.3s;
+  animation-delay: -0.3s;
   left: -25px;
 }
 
@@ -392,9 +393,8 @@ body .hang-tight__eq {
 }
 
 /*
- * squares
- */
-
+  * squares
+  */
 
 .hang-tight__squares {
   width: 40px;
@@ -448,7 +448,9 @@ body .hang-tight__eq {
 }
 
 @keyframes hang-tight-sqaures {
-  0%, 70%, 100% {
+  0%,
+  70%,
+  100% {
     -webkit-transform: scale3D(1, 1, 1);
     transform: scale3D(1, 1, 1);
   }
