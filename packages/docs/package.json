@@ -1,5 +1,6 @@
 {
   "name": "hang-tight-docs",
+  "private": true,
   "version": "1.2.0",
   "description": "Hang tight documentation",
   "main": "index.js",
@@ -17,6 +18,5 @@
     "classnames": "^2.2.6",
     "hang-tight": "^1.2.0",
     "hang-tight-react": "^1.2.0"
-  },
-  "gitHead": "aa565141ee4deb5faa1c756294f6d0d54c3530d1"
+  }
 }

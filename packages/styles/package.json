@@ -4,6 +4,5 @@
   "main": "index.css",
   "styles": "index.css",
   "license": "MIT",
-  "private": false,
-  "gitHead": "aa565141ee4deb5faa1c756294f6d0d54c3530d1"
+  "private": false
 }
