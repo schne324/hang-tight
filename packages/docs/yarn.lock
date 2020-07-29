@@ -2466,11 +2466,6 @@ grapheme-breaker@^0.3.2:
     brfs "^1.2.0"
     unicode-trie "^0.3.1"
 
-hang-tight@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/hang-tight/-/hang-tight-1.1.0.tgz#09bdb18e25a8f2cf65b919e9b267952224764349"
-  integrity sha512-c0VOrnk1SYYqmCFttF07bcg5EnevI3YK0ya1M+Y93ZWcDmKL2hajIVzc4DQIjhzFnG+XPcrTUB70lB1dpHyuvA==
-
 har-schema@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-2.0.0.tgz#a94c2224ebcac04782a0d9035521f24735b7ec92"
