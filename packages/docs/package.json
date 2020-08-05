@@ -16,7 +16,11 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "hang-tight": "^1.2.0",
-    "hang-tight-react": "^1.2.0"
+    "hang-tight-react": "^1.2.0",
+    "prismjs": "^1.20.0",
+    "react-element-to-jsx-string": "^14.3.1",
+    "react-refractor": "^2.1.0",
+    "refractor": "^3.0.0"
   },
   "gitHead": "aa565141ee4deb5faa1c756294f6d0d54c3530d1"
 }
