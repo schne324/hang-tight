@@ -1,17 +1,22 @@
 {
   "name": "hang-tight-docs",
+  "private": true,
   "version": "1.2.0",
   "description": "Hang tight documentation",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "parcel build index.html",
+    "postbuild": "react-snap",
     "dev": "parcel index.html"
   },
   "devDependencies": {
     "@types/react-dom": "^16.9.8",
     "parcel-bundler": "^1.12.4",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-snap": "^1.23.0",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -22,5 +27,8 @@
     "react-refractor": "^2.1.0",
     "refractor": "^3.0.0"
   },
-  "gitHead": "aa565141ee4deb5faa1c756294f6d0d54c3530d1"
+  "reactSnap": {
+    "source": "dist",
+    "skipThirdPartyRequests": true
+  }
 }
