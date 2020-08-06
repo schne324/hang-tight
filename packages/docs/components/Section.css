@@ -7,13 +7,14 @@ section h3 {
   margin-top: 1.5em;
 }
 
-section [role='region'] pre {
-  margin: 0;
-}
-
 section [role='region'] {
   max-height: 150px;
   overflow: auto;
+  border: 1px solid #ccc;
+}
+
+section [role='region'] pre {
+  margin: 0;
 }
 
 .EQ .LoadWrap {

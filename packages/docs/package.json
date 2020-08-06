@@ -19,6 +19,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
+    "a11y-syntax-highlighting": "^0.1.0",
     "classnames": "^2.2.6",
     "hang-tight": "^1.2.0",
     "hang-tight-react": "^1.2.0",

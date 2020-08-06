@@ -1,5 +1,5 @@
 @import 'hang-tight';
-@import 'prismjs/themes/prism-funky';
+@import 'a11y-syntax-highlighting/dist/prism/a11y-light.css';
 
 body {
   font-family: 'Comfortaa', cursive;
@@ -46,7 +46,6 @@ code {
   padding: 1em;
   background: #fff;
   font-family: 'Source Code Pro', monospace;
-  font-size: 1.5em;
 }
 
 a,
@@ -65,14 +64,14 @@ main {
   text-align: center;
 }
 
-main pre[class*='language-'],
-[role='dialog'] pre[class*='language-'] {
+main pre[class*='language-'] {
   padding: 0;
 }
 
-main pre[class*='language-'] code,
-[role='dialog'] pre[class*='language-'] code {
-  overflow: auto;
+main pre[class*='language-'].Install {
+  background: #fff;
+  border-left: 2px solid #3185fc;
+  border-right: 2px solid #34e5ff;
 }
 
 [role='progressbar'] {
