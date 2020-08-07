@@ -140,3 +140,9 @@ main .Install {
     width: 50%;
   }
 }
+
+@media (max-width: 750px) {
+  section {
+    width: 95%;
+  }
+}
