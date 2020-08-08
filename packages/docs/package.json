@@ -1,7 +1,7 @@
 {
   "name": "hang-tight-docs",
   "private": true,
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Hang tight documentation",
   "main": "index.js",
   "license": "MIT",
@@ -21,8 +21,8 @@
   "dependencies": {
     "a11y-syntax-highlighting": "^0.1.0",
     "classnames": "^2.2.6",
-    "hang-tight": "^1.2.0",
-    "hang-tight-react": "^1.2.0",
+    "hang-tight": "^2.0.0",
+    "hang-tight-react": "^2.0.0",
     "prismjs": "^1.20.0",
     "react-element-to-jsx-string": "^14.3.1",
     "react-refractor": "^2.1.0",
