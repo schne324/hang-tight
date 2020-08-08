@@ -7,6 +7,7 @@ import {
   SpinningCircles,
   Squares,
   Waves,
+  Spinner,
 } from 'hang-tight-react';
 import Refractor from 'react-refractor';
 import powershell from 'refractor/lang/powershell';
@@ -66,6 +67,9 @@ const App: React.ComponentType = () => {
         </Section>
         <Section name="Squares" className="min">
           <Squares paused={!animationEnabled} />
+        </Section>
+        <Section name="Spinner">
+          <Spinner paused={!animationEnabled} />
         </Section>
         <Section name="SpinningCircles">
           <SpinningCircles paused={!animationEnabled} />

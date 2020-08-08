@@ -1,0 +1,40 @@
+body .hang-tight__eq {
+  animation-delay: -0.15s;
+  position: relative;
+}
+
+.hang-tight__eq,
+.hang-tight__eq:before,
+.hang-tight__eq:after {
+  width: 15px;
+  height: 65px;
+  background: #000;
+  animation: hang-tight-eq 1s infinite ease-in-out;
+}
+
+.hang-tight__eq:before {
+  position: absolute;
+  content: '';
+  animation-delay: -0.3s;
+  left: -25px;
+}
+
+.hang-tight__eq:after {
+  position: absolute;
+  content: '';
+  left: 25px;
+  animation-delay: 0s;
+}
+
+@keyframes hang-tight-eq {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}

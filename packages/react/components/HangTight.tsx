@@ -9,7 +9,8 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
     | 'sliding-bars'
     | 'spinning-circles'
     | 'squares'
-    | 'wave';
+    | 'wave'
+    | 'spinner';
   paused?: boolean;
 }
 

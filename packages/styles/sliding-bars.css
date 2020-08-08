@@ -1,0 +1,41 @@
+.hang-tight__sliding-bars {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.hang-tight__sliding-bars::before,
+.hang-tight__sliding-bars::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  position: absolute;
+  animation: hang-tight-sliding-bars 0.7s infinite alternate ease-in-out;
+}
+.hang-tight__sliding-bars::before {
+  top: 0;
+}
+.hang-tight__sliding-bars::after {
+  bottom: 0;
+}
+
+@keyframes hang-tight-sliding-bars {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}
